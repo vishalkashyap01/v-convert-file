@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Format Converter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container">
+            <a class="navbar-brand text-success" href="#">File Converter</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="text-center text-success mb-4">Convert Your Files Seamlessly</h1>
+        <div class="row g-4">
+            <!-- Conversion Cards -->
+            <div class="col-md-4">
+                <div class="card conversion-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Text to PDF</h5>
+                        <input type="file" id="textToPdfInput" class="form-control mb-3">
+                        <button class="btn btn-success w-100" onclick="convertTextToPdf()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card conversion-card">
+                    <div class="card-body">
+                        <h5 class="card-title">PDF to Text</h5>
+                        <input type="file" id="pdfToTextInput" class="form-control mb-3">
+                        <button class="btn btn-success w-100" onclick="convertPdfToText()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card conversion-card">
+                    <div class="card-body">
+                        <h5 class="card-title">PDF to LaTeX</h5>
+                        <input type="file" id="pdfToLatexInput" class="form-control mb-3">
+                        <button class="btn btn-success w-100" onclick="convertPdfToLatex()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card conversion-card">
+                    <div class="card-body">
+                        <h5 class="card-title">LaTeX to Text</h5>
+                        <input type="file" id="latexToTextInput" class="form-control mb-3">
+                        <button class="btn btn-success w-100" onclick="convertLatexToText()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card conversion-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Word to PPT</h5>
+                        <input type="file" id="wordToPptInput" class="form-control mb-3">
+                        <button class="btn btn-success w-100" onclick="convertWordToPpt()">Convert</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card conversion-card">
+                    <div class="card-body">
+                        <h5 class="card-title">LaTeX to Word</h5>
+                        <input type="file" id="latexToWordInput" class="form-control mb-3">
+                        <button class="btn btn-success w-100" onclick="convertLatexToWord()">Convert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-white shadow">
+        <p class="mb-0 text-muted">© 2024 File Converter | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
